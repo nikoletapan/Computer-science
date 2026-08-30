@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОМГ 8 клас</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body onload="startTime()" style="text-align: center;">
+    <header>
+        <div class="navbar">
+            <a href="index.html">Начало</a>
+            <a href="OMG.html">МГ "Акад. К. Попов"</a>
+            <a href="program.html">Учебна програма</a>			  		  
+            <div class="dropdown">    
+                <button class="dropbtn">Празници: 
+                <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="liberation.html">Освобождение</a>
+                <a href="easter.html">Великден</a>
+                <a href="alphabet.html">Азбука</a>	  
+            </div>
+            </div>
+            <h1>Информационни технологии 8 клас II гр.</h1>   
+    </header>
+    <div id="txt"></div>
+    <br>
+    <script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+    <table border="1px" width="95%" style="background-color: aquamarine; border-color: blueviolet;width="95%" border="1px" align="center">
+        <thead style="background-color: bisque;>
+            <tr>
+                <th colspan="7">Учебна програма на VII Д клас</th>
+            </tr>
+        <tr>
+            <th>Час</th>
+            <th>Време</th>
+            <th>Понеделник</th>
+            <th>Вторник</th>
+            <th>Сряда</th>
+            <th>Четвъртък</th>
+            <th>Петък</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1)</td>
+            <td>7:30 - 8:10</td>
+            <td>БЕЛ</td>
+            <td>БЕЛ</td>
+            <td>Немски</td>
+            <td>Математика</td>
+            <td>ФВС</td>
+        </tr>
+        <tr>
+            <td>2)</td>
+            <td>8:20 - 9:00</td>
+            <td>БЕЛ</td>
+            <td>Информатика</td>
+            <td>Немски</td>
+            <td>Философия</td>
+            <td>Математика</td>
+        </tr>
+        <tr>
+            <td>3)</td>
+            <td>9:10 - 9:50</td>
+            <td>ИТ</td>
+            <td>Информатика</td>
+            <td>ФВС</td>
+            <td>Немски</td>
+            <td>Немски</td>
+        </tr>
+        <tr>
+            <td>4)</td>
+            <td>10:10 - 10:50</td>
+            <td>Математика</td>
+            <td>Математика</td>
+            <td>Немски</td>
+            <td>Немски</td>
+            <td>БЕЛ</td>
+        </tr>
+        <tr>
+            <td>5)</td>
+            <td>11:00 - 11:40</td>
+            <td>Немски</td>
+            <td>Немски</td>
+            <td>Немски</td>
+            <td>Музика</td>
+            <td>Немски</td>
+        </tr>
+        <tr>
+            <td>6)</td>
+            <td>11:45 - 12:25</td>
+            <td>Немски</td>
+            <td>Немски</td>
+            <td>Математика</td>
+            <td>Немски</td>
+            <td>Немски</td>
+        </tr>
+        <tr>
+            <td>7)</td>
+            <td>12:30 - 13:10</td>
+            <td>Немски</td>
+            <td>Немски</td>
+            <td>ЧК</td>
+            <td>Немски</td>
+            <td>Немски</td>
+        </tr>
+        </tbody>
+    </table>
+	
+	<footer><p>Н. Панайотова 2025</p></footer>
+</body>
+</html>
