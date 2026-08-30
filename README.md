@@ -1,1 +1,3 @@
 # Computer-science
+
+As a programming teacher, I would write the code in front of the students in real time as it was being displayed on the screen. I improvised during class, tailoring the lessons to each student’s interests. That’s also why the colors in the website projects aren’t harmonious—they were based on the students’ suggestions, for the sake of experimentation and visual clarity. Each student had their own project, with their own text and individual images generated using free artificial intelligence. The students wrote their plans in Google Docs and included many screenshots and images in them. The uploaded learning materials served as a model for them to create their own.
