@@ -1,4 +1,4 @@
-﻿namespace izpitvane19
+﻿namespace exam_5
 {
     internal class Program
     {
