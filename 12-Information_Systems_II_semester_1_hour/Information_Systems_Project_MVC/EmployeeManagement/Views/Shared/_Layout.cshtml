@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/site.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar-layout">
+            <ul class="ul-no-dots">
+                <li><a asp-controller="FinalExam" asp-action="Information">Информация</a></li>
+                <li><a asp-controller="FinalExam" asp-action="Mathematics">Пренасочване</a></li>
+                <li><a asp-controller="Home" asp-action="Error">Грешка</a></li>
+                <li><a asp-controller="FinalExam" asp-action="Mathematics">Матури</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Празници:
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="liberation.html">Освобождение</a>
+                        <a href="eastern.html">Великден</a>
+                        <a href="alphabet.html">Азбука</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+</body>
+</html>

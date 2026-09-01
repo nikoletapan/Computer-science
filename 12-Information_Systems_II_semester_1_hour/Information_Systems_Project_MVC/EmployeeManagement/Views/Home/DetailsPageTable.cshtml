@@ -1,0 +1,67 @@
+    <style>
+    table, th, td {
+    border: 1px solid blue;
+    margin: 30px;
+    padding: 10px;
+    }
+    </style>
+
+    <h1 style="text-align: center;">Hello!</h1>
+    <table>
+        <tr>
+            <th>
+                <h3>@ViewData["PageTitle"] : ViewData</h3>
+                @{
+                    var e = ViewData["Employee"] as EmployeeManagement.Models.Employee;
+                }
+            </th>
+            <th>
+                <h3>@ViewBag.PageTitle : ViewBag</h3>
+            </th>
+            <th>
+                <h3>@ViewBag.PageTitle : Model - Loosely typed view</h3>
+            </th>
+            <th>
+                <h3>@ViewBag.PageTitle : Model - Strongly typed view</h3>
+            </th>
+        </tr>
+        <td>
+            <div>Id: @e.Id</div>
+            <div>Name: @e.Name</div>
+            <div>Family: @e.Family</div>
+            <div>Phone: @e.Phone</div>
+            <div>Email: @e.Email</div>
+            <div>Department: @e.Department</div>
+        </td>
+        <td>
+            <div>Id: @ViewBag.Employee.Id</div>
+            <div>Name: @ViewBag.Employee.Name</div>
+            <div>Family: @ViewBag.Employee.Family</div>
+            <div>Phone: @ViewBag.Employee.Phone</div>
+            <div>Email: @ViewBag.Employee.Email</div>
+            <div>Department: @ViewBag.Employee.Department</div>
+        </td>
+        <td>
+            <div>Id: @Model.Id</div>
+            <div>Name: @Model.Name</div>
+            <div>Family: @Model.Family</div>
+            <div>Phone: @Model.Phone</div>
+            <div>Email: @Model.Email</div>
+            <div>Department: @Model.Department</div>
+        </td>
+        <td>
+            @model EmployeeManagement.Models.Employee
+            <div>Id: @Model.Id</div>
+            <div>Name: @Model.Name</div>
+            <div>Family: @Model.Family</div>
+            <div>Phone: @Model.Phone</div>
+            <div>Email: @Model.Email</div>
+            <div>Department: @Model.Department</div>
+        </td>
+        </tr>
+    </table>
+    <br />
+    <hr>  
+
+    <br />
+    <hr>   

@@ -1,0 +1,157 @@
+﻿body {
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+header {
+    font-family: "Times New Roman", sans-serif;
+    min-height: 40px; /* Changed from height to min-height */
+    font-weight: bold;
+    background-color: darkturquoise;
+    border-color: antiquewhite;
+    color: darkblue;
+    border-style: double;
+    border-width: 10px;
+    margin: 5px; /* Added units */
+    padding: 10px;
+    box-sizing: border-box; /* Makes padding included in height calculation */
+}
+
+h1 {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 30px; /* Fixed space */
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+/* Rest of your CSS remains the same */
+.navbar-layout {
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: #ebf8e1;
+}
+
+.ul-no-dots {
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    margin: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0px;
+}
+
+
+li a {
+    float: left;
+    font-size: 16px;
+    color: darkblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+    li a:hover, .dropdown:hover .dropbtn {
+        background-color: rgb(125, 200, 224);
+        color: yellow;
+    }
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: darkblue;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        font-weight: bold;
+        margin: 0;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ebf8e1;
+    min-width: 110px;
+    min-height: 26px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        float: none;
+        color: violet;
+        padding: 2px 1px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+
+    .dropdown-content a:hover {
+            background-color: cornflowerblue;
+            color: yellow;
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar a, .dropdown-content a {
+    transition: all 0.3s ease;
+}
+
+.dropdown-content a {
+    padding: 8px 10px; /* Increased from 2px 1px */
+}
+
+.navbar a:focus, .dropdown .dropbtn:focus {
+    background-color: cornflowerblue;
+    color: yellow;
+    outline: 2px solid darkblue;
+}
+

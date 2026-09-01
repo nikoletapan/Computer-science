@@ -1,0 +1,42 @@
+﻿@model IEnumerable<EmployeeManagement.Models.Employee>
+
+<style>
+    table, th, td {
+        border: 1px solid blue;
+        background-color: antiquewhite;
+        color: maroon;
+        margin: 30px;
+        padding: 10px;
+    }
+</style>
+
+@{
+    ViewBag.Title = "Employee List";
+}
+
+    <h1>List of all employees</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Family</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employee in Model) // loop
+            {
+                <tr>
+                    <td>@employee.Id</td>
+                    <td>@employee.Name</td>
+                    <td>@employee.Family</td>
+                    <td>@employee.Phone</td>
+                    <td>@employee.Email</td>
+                    <td>@employee.Department</td>
+                </tr>
+            }
+        </tbody>
+    </table>
