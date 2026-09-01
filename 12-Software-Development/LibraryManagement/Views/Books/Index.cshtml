@@ -1,0 +1,72 @@
+﻿@model IEnumerable<LibraryManagement.Models.Book>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Списък с книги</h1>
+<p>
+    <a asp-action="Create">Създайте нова:</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Author)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Genre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cover)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsAvailable)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @if (item.Cover!= null && item.Cover.Length > 0)
+                {
+                 <img src="data:image/png;base64,@(Convert.ToBase64String(item.Cover))" width="100" height="100" />
+                }
+                 else
+                    {
+                        <span>Няма изображение</span>
+                    }
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsAvailable)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn-primary">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn-info">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn-danger">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
