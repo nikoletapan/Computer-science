@@ -1,0 +1,84 @@
+html {
+    font-size: 30px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 25px;
+  }
+}
+
+body {
+    background-color: #FFF5E8;
+    margin-bottom: 60px;
+    font-style: italic;
+}
+
+container {
+    max-width: 300px;
+    margin: auto;
+}
+
+.container-fluid {
+    background-color: #8B4513;
+    border-color: antiquewhite;
+    border-style: double;
+    border-width: 10px;
+}
+
+h1 {
+    text-decoration-style: solid;
+    color: maroon;
+}
+
+ul {
+    list-style-type: armenian;
+    text-decoration-style: solid;
+    color: maroon;
+}
+
+table, th, td {
+    font-family: times new roman, sans-serif;
+    padding: 30px;
+    border: 5px solid white;
+    background: linear-gradient(0.25turn, #CCB373, #ebf8e1, #85534A);
+    color: maroon;
+}
+
+th {
+    text-decoration-style: solid; 
+    height: 32px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+td {
+    color: navy;
+    font-size: 30px;
+    color: rgb(44,46,112); 
+}
+
+p {
+    font-size: 30px;
+    padding: 15px;
+    color: rgb(44,46,112);
+    background-color: #E9D7B1;
+    size-adjust: 200px;
+    border-color: antiquewhite;
+    border-style: double;
+    border-width: 10px;
+}
+
+.great-vibes-regular {
+    font-family: "Great Vibes", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.round-corners {
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 30px;
+}

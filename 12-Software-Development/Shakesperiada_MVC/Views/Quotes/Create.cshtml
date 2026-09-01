@@ -1,0 +1,38 @@
+﻿@model Shakesperiada.Models.Quote
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Създай</h1>
+
+<h4>Цитат</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="QuoteBG" class="control-label">Превод на български:</label>
+                <input asp-for="QuoteBG" class="form-control" />
+                <span asp-validation-for="QuoteBG" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QuoteEN" class="control-label">В оригинал на английски:</label>
+                <input asp-for="QuoteEN" class="form-control" />
+                <span asp-validation-for="QuoteEN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Запази" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Обратно в списъка</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

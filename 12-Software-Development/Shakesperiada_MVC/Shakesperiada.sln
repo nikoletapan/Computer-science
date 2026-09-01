@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shakesperiada", "Shakesperiada.csproj", "{B12FA478-2135-4A0D-B10B-8A448FA31582}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B12FA478-2135-4A0D-B10B-8A448FA31582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B12FA478-2135-4A0D-B10B-8A448FA31582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B12FA478-2135-4A0D-B10B-8A448FA31582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B12FA478-2135-4A0D-B10B-8A448FA31582}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D15F596-89C6-4724-803A-32F0548632C4}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,30 @@
+﻿@model Shakesperiada.Models.Quote
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Детайли</h1>
+
+<div>
+    <h4>Цитат</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Превод на български:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.QuoteBG)
+        </dd>
+        <dt class = "col-sm-2">
+            В оригинал на английски:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.QuoteEN)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Редактирай</a> |
+    <a asp-action="Index">Обратно в списъка</a>
+</div>
